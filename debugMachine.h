@@ -22,7 +22,7 @@ public:
 	}
 	void info (std::string toWrite, bool nl = true) {
 		if (write) {
-			std::cout << "\033[36mWARNING: " << toWrite << "\033[0m";
+			std::cout << "\033[36mINFO: " << toWrite << "\033[0m";
 			if (nl) {
 				std::cout << std::endl;
 			}
