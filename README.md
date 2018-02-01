@@ -34,3 +34,6 @@ d.debug ("Poor Mans Debugger", false); //normal debug statement, no new line
 ### Compatibility
 Tested under GNU/Linux with Gcc-C++ of standard 11.
 No guarantee given for the reliability of my work [yet you are free to use it as you want to] 
+
+### Performance
+If the debug machine is deactivated [by setting d.write to false], it should get optimized out by Gcc. 
