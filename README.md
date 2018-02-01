@@ -17,7 +17,7 @@ d.write = false; //nothing will be shown
 
 ### Usage in projects
 The debug machine has three basic commands. 
-```out```, ```warn``` and ```info``` 
+```out```, ```debug```, ```warn``` and ```info``` 
 They all are functions of the form of ```void out (std::string toWrite, bool nl = true)```; They only change by how they output the messages: the output color. 
 
 To use, simply use 
@@ -28,6 +28,8 @@ d.warn ("Warning"); //normal warning [red], new line
 d.warn ("Warning", false); //normal warning, no new line
 d.info ("Info"); //normal info [cyan], new line
 d.into ("Info", false); //normal info, no new line
+d.debug ("Poor Mans Debugger"); //normal debug statement [magenta], new line
+d.debug ("Poor Mans Debugger", false); //normal debug statement, no new line
 ```
 ### Compatibility
 Tested under GNU/Linux with Gcc-C++ of standard 11.
