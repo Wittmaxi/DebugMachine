@@ -28,5 +28,13 @@ public:
 			}
 		}
 	}
+	void debug (std::string toWrite, bool nl = true) {
+		if (write) {
+			std::cout << "\033[35mDEBUG: " << toWrite << "\033[0m";
+			if (nl) {
+				std::cout << std::endl;
+			}
+		}
+	}	
 	bool write;
 } d;
